@@ -1,25 +1,30 @@
 #include<stdio.h>
-int sumatoria(int a){
-    int resultado;
-    if (a%2==0){
-    resultado=(1)/(2*a)+1;
+float sumatoria(int a){
+    float resultado;
+    resultado=(2*a)+1;
+     if (a%2==0){
+     resultado= 1/resultado;
     }
     else {
-      resultado=(-1)/(2*a)+1;  
+       resultado= -1/resultado; 
     }
     return resultado;
 }
 
 int main(){
-int num, b, i, sum;
+float b, sum;
+int num, i;
 sum=0;
 printf("Ingrese el numero a evaluar\n");
 scanf("%d", &num);
 
 for (i=0; i<=num; i++){
+    printf ("i:%d\n", i);
 b=sumatoria(i);
+printf("%f\n", b);
 sum=sum+b;
 }
-printf("ELl resultado es: %d\n", sum);
+
+printf("El resultado es: %f\n", sum);
     return 0;
 }
