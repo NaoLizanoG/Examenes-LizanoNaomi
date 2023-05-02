@@ -1,30 +1,41 @@
+//Naomi Lizano
+//Prueba progreso 1
 #include<stdio.h>
+
+//Funcion para definir los valores de la serie
 float sumatoria(int a){
     float resultado;
+
+    //priemra parte de la ecuacion dada
     resultado=(2*a)+1;
+
+    //if para definir si el 1 es negativo o positivo dependiendo de si esta elevado a un par o impar
      if (a%2==0){
      resultado= 1/resultado;
     }
     else {
        resultado= -1/resultado; 
     }
+    //retorno del resultado
     return resultado;
 }
 
 int main(){
+//definicion de variables
 float b, sum;
 int num, i;
 sum=0;
 printf("Ingrese el numero a evaluar\n");
 scanf("%d", &num);
 
+//ciclo for para ejecutar la sumatoria 
 for (i=0; i<=num; i++){
-    printf ("i:%d\n", i);
+//se invoca la funcion
 b=sumatoria(i);
-printf("%f\n", b);
 sum=sum+b;
 }
 
+//se devulve el resultado al usuario
 printf("El resultado es: %f\n", sum);
     return 0;
 }
