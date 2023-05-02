@@ -6,7 +6,7 @@
 float sumatoria(int a){
     float resultado;
 
-    //priemra parte de la ecuacion dada
+    //primera parte de la ecuacion dada
     resultado=(2*a)+1;
 
     //if para definir si el 1 es negativo o positivo dependiendo de si esta elevado a un par o impar
@@ -26,6 +26,7 @@ float b, sum;
 int num, i;
 sum=0;
 
+//validacion para que el usuario ingrese solo numeros positivos
 do{
 printf("Ingrese el numero positivo a evaluar\n");
 scanf("%d", &num);
