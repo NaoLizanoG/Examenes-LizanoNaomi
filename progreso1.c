@@ -25,8 +25,11 @@ int main(){
 float b, sum;
 int num, i;
 sum=0;
-printf("Ingrese el numero a evaluar\n");
+
+do{
+printf("Ingrese el numero positivo a evaluar\n");
 scanf("%d", &num);
+} while (num<0);
 
 //ciclo for para ejecutar la sumatoria 
 for (i=0; i<=num; i++){
